@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ranvita '27 | CMR University</title>
+<meta name="description" content="Ranvita 2027 - the flagship inter-collegiate cultural, literary and management fest of CMR University. Theme: Echoes of Earth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@400;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<canvas id="fireflies" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a href="#home" class="brand">
+    <img src="assets/cmr-logo.png" alt="CMR University" class="logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+    <span class="logo-fallback">CMR UNIVERSITY</span>
+  </a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="links" id="links">
+    <a href="#about">About</a>
+    <a href="#moments">Highlights</a>
+    <a href="#events">Events</a>
+    <a href="#points">Points</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#rules">Rules</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="cta">Register</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-reel" aria-hidden="true">
+    <video class="hero-reel-video hero-reel-one" src="assets/video1.mp4" muted playsinline preload="metadata"></video>
+    <video class="hero-reel-video hero-reel-two" src="assets/video2.mp4" muted playsinline preload="metadata"></video>
+    <div class="hero-reel-noise"></div>
+  </div>
+  <div class="portal" aria-hidden="true">
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <div class="glow"></div>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">CMR University presents</p>
+    <h1 class="title" aria-label="Ranvita 27"><span class="glitch" data-text="RANVITA">RANVITA</span><span class="yr glitch-year" data-text="'27">'27</span></h1>
+    <p class="theme reveal">Echoes of Earth</p>
+    <p class="lede reveal">The flagship inter-collegiate cultural, literary &amp; management extravaganza. Step through the portal.</p>
+
+    <div class="countdown reveal" id="countdown" aria-live="polite"></div>
+
+    <div class="hero-cta reveal">
+      <a href="#events" class="btn primary">Explore Events</a>
+      <a href="#contact" class="btn ghost">Register Now</a>
+    </div>
+
+    <div class="stats reveal">
+      <div><b data-count="20">0</b><span>Events</span></div>
+      <div><b data-count="2">0</b><span>Days</span></div>
+      <div><b data-count="3">0</b><span>Tiers</span></div>
+      <div><b data-count="150000" data-prefix="₹">0</b><span>Prize Money</span></div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>FASHION SHOW</span><i>✦</i><span>RUNWAY</span><i>✦</i><span>BATTLE OF BANDS</span><i>✦</i><span>COUNCIL WARS</span><i>✦</i><span>DANCE BATTLE</span><i>✦</i><span>MAD ADS</span><i>✦</i><span>BEAT BOXING</span><i>✦</i><span>BGMI</span><i>✦</i>
+    <span>FASHION SHOW</span><i>✦</i><span>RUNWAY</span><i>✦</i><span>BATTLE OF BANDS</span><i>✦</i><span>COUNCIL WARS</span><i>✦</i><span>DANCE BATTLE</span><i>✦</i><span>MAD ADS</span><i>✦</i><span>BEAT BOXING</span><i>✦</i><span>BGMI</span><i>✦</i>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="wrap two">
+    <div class="reveal">
+      <h2 class="h2">About <em>Us</em></h2>
+      <p>At CMR University, our student community is driven by a shared passion for creativity, leadership, and holistic excellence. Powered by the Student Council and mentored by the Office of Student Affairs, we bring together diverse schools, clubs, and associations across the Lakeside Campus.</p>
+      <p>Beyond academics, we create platforms where innovation meets expression, uniting artists, thinkers, and organizers to execute large-scale experiences. Every initiative reflects our commitment to teamwork, integrity, and turning bold student visions into reality.</p>
+    </div>
+    <div class="reveal delay">
+      <h2 class="h2">About <em>Ranvita</em></h2>
+      <p>Hosted at the CMR University Lakeside Campus, Ranvita 2027 unites talent from Bengaluru, across India, and international contingents. The fest features performing arts, coding, design, gaming, debates, and business strategy.</p>
+      <p>Beyond the main arena, Pre-Ranvita flash-mobs, social initiatives like <b>Ride for a Cause</b>, and high-voltage <b>Pro-Nights</b> build toward the ultimate battle for the <b>Overall Champions</b> trophy.</p>
+    </div>
+  </div>
+  <div class="wrap tiers">
+    <div class="tier platinum reveal"><h3>Platinum</h3><p>Council</p></div>
+    <div class="tier gold reveal delay"><h3>Gold</h3><p>School &amp; Club</p></div>
+    <div class="tier silver reveal delay2"><h3>Silver</h3><p>Associate</p></div>
+  </div>
+</section>
+
+  <section class="section dark video-section" id="moments">
+    <div class="wrap reveal">
+      <h2 class="h2 center">Ranvita <em>Moments</em></h2>
+      <div class="video-slideshow" id="videoSlideshow" aria-label="Ranvita video slideshow">
+        <div class="video-slide active">
+          <video src="assets/video1.mp4" muted playsinline preload="metadata" aria-label="Ranvita video 1"></video>
+          <div class="video-overlay"></div>
+          <div class="video-title">RANVITA'24</div>
+        </div>
+        <div class="video-slide">
+          <video src="assets/video2.mp4" muted playsinline preload="metadata" aria-label="Ranvita video 2"></video>
+          <div class="video-overlay"></div>
+          <div class="video-title">RANVITA'26</div>
+        </div>
+        <button class="video-arrow prev" type="button" aria-label="Previous video">‹</button>
+        <button class="video-arrow next" type="button" aria-label="Next video">›</button>
+        <button class="video-sound" type="button" aria-label="Unmute video" aria-pressed="false">
+          <span class="sound-icon" aria-hidden="true">🔇</span>
+        </button>
+        <div class="video-dots" aria-label="Choose video">
+          <button class="video-dot active" type="button" aria-label="Show video 1" data-slide="0"></button>
+          <button class="video-dot" type="button" aria-label="Show video 2" data-slide="1"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section dark" id="runway-feature">
+  <div class="wrap feature reveal">
+    <p class="eyebrow">Signature attraction</p>
+    <h2 class="h2">India's first <em class="runway-highlight">360° Forest Underground Runway</em></h2>
+    <p>Designers race against time to sculpt raw, nature-inspired couture while models command the spotlight across three electrifying rounds. Photography and Reel Making also centre on this one-of-a-kind ramp.</p>
+  </div>
+</section>
+
+<section class="section" id="events">
+  <div class="wrap">
+    <h2 class="h2 center reveal">The <em>Events</em></h2>
+    <p class="sub center reveal">20 battles across stage, arena and classroom. Tap any card for rules and details.</p>
+    <div class="toolbar reveal">
+      <div class="filters" id="filters">
+        <button class="chip active" data-f="all">All</button>
+        <button class="chip" data-f="5">★★★★★</button>
+        <button class="chip" data-f="4">★★★★</button>
+        <button class="chip" data-f="3">★★★</button>
+      </div>
+      <input type="search" id="search" placeholder="Search events…" aria-label="Search events">
+    </div>
+    <div class="grid" id="eventGrid"></div>
+    <p class="empty" id="empty" hidden>No events match your search.</p>
+  </div>
+</section>
+
+<section class="section dark" id="points">
+  <div class="wrap">
+    <h2 class="h2 center reveal">Points &amp; <em>Prizes</em></h2>
+    <div class="table-wrap reveal">
+      <table class="tbl">
+        <thead><tr><th>Rating</th><th>1st Place</th><th>2nd Place</th><th>3rd Place</th></tr></thead>
+        <tbody>
+          <tr><td>★★★★★ Five Star</td><td>500 pts</td><td>400 pts</td><td>300 pts</td></tr>
+          <tr><td>★★★★ Four Star</td><td>400 pts</td><td>300 pts</td><td>200 pts</td></tr>
+          <tr><td>★★★ Three Star</td><td>300 pts</td><td>200 pts</td><td>100 pts</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callouts">
+      <div class="callout reveal"><h3>Cheerleading</h3><p>Raise the spirit, rock the stage, and win a massive <b>1500 points</b> for your college!</p></div>
+      <div class="callout big reveal delay"><span>Total Prize Money</span><b>₹1,50,000</b></div>
+      <div class="callout reveal delay2"><h3>Non-participants</h3><p>A registration fee of <b>₹500</b> applies, payable near the box office.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="schedule">
+  <div class="wrap">
+    <h2 class="h2 center reveal">The <em>Schedule</em></h2>
+    <p class="sub center reveal">Dates and event slots will be announced soon.</p>
+    <div class="tabs reveal" role="tablist">
+      <button class="tab active" data-day="1" role="tab">Day 1 · Genesis</button>
+      <button class="tab" data-day="2" role="tab">Day 2 · Crescendo</button>
+    </div>
+    <div class="table-wrap reveal"><table class="tbl sched" id="schedTable"></table></div>
+  </div>
+</section>
+
+<section class="section dark" id="rules">
+  <div class="wrap narrow">
+    <h2 class="h2 center reveal">Rules &amp; Campus <em>Guidelines</em></h2>
+    <ol class="rules">
+      <li class="reveal">Each participant must provide a valid college ID card.</li>
+      <li class="reveal">Dress code: no short skirts, no sleeveless tops, no see-through tops.</li>
+      <li class="reveal">Participants must maintain the decorum of the college.</li>
+      <li class="reveal">Registration fee is non-refundable for both individual and contingent participants.</li>
+      <li class="reveal">Report to your venue 30 minutes before the allotted time.</li>
+      <li class="reveal"><b>Non-CMR students:</b> entry through Gate 1. <b>CMR students:</b> entry through Gate 2.</li>
+      <li class="reveal">Refer to the blueprint map in the brochure.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <h2 class="h2 center reveal">Contact <em>Us</em></h2>
+    <div class="two contacts">
+      <div class="card-box reveal">
+        <h3>Event Co-ordinators</h3>
+        <ul class="people">
+          <li><span>Name TBA</span><a href="tel:">Phone TBA</a></li>
+          <li><span>Name TBA</span><a href="tel:">Phone TBA</a></li>
+          <li><span>Name TBA</span><a href="tel:">Phone TBA</a></li>
+        </ul>
+      </div>
+      <div class="card-box reveal delay">
+        <h3>Registration Co-ordinators</h3>
+        <ul class="people">
+          <li><span>Name TBA</span><a href="tel:">Phone TBA</a></li>
+          <li><span>Name TBA</span><a href="tel:">Phone TBA</a></li>
+          <li><span>Name TBA</span><a href="tel:">Phone TBA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero-cta center reveal">
+      <a href="#" class="btn primary" id="registerLink">Register Now</a>
+      <a href="https://www.instagram.com/ranvita.cmru/?hl=en" class="btn ghost" id="instaLink">Instagram</a>
+      <a href="#" class="btn ghost" id="siteLink">Website</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <img src="assets/cmr-logo.png" alt="CMR University" class="logo" onerror="this.style.display='none'">
+  <p>Ranvita '27 · CMR University . Bengaluru</p>
+  <p class="small">Private University Estd in Karnataka State by Act No. 45 of 2013</p>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="close" id="mClose" aria-label="Close">×</button>
+    <div id="mBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
